@@ -1,0 +1,30 @@
+/* public/stylesheets/linuxModule.css */
+/* Add your custom styles for the Linux Learning Lab module */
+/* Feel free to customize the colors, fonts, and layout */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 60px; /* Adjusted margin to accommodate the fixed-bottom logout button */
+  }
+  
+  .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .border {
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Added border-radius for a subtle rounded appearance */
+  }
+  
+  /* Additional styles as needed */
+  
+  /* Adjustments for the fixed-bottom logout button */
+  .fixed-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1030; /* higher than the default z-index for Bootstrap navbar */
+  }
+  

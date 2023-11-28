@@ -1,0 +1,88 @@
+<!-- views/linuxModule.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/xterm.css">
+  <title>Linux Learning Lab</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #header {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    #main-container {
+      display: flex;
+      height: calc(100% - 70px);
+    }
+
+    #lab-content {
+      overflow-y: auto;
+      flex: 1;
+      padding: 1rem;
+    }
+
+    #terminal-container {
+    flex: 1;
+    padding: 1rem;
+    /* Add some styles to ensure proper sizing and visibility of xterm.js terminal */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+
+    .terminal-container {
+      height: 100%;
+    }
+    .xterm {
+        display: flex;
+        align-items: center;
+        margin-top: 200px; /* Adjust the margin as needed */
+    }
+
+  </style>
+</head>
+<body class="bg-light">
+  <!-- Header -->
+  <div id="header">
+    <h1>Linux Learning Lab</h1>
+  </div>
+
+  <!-- Main Container -->
+  <div id="main-container">
+    <!-- Left Container for Lab Content -->
+    <div id="lab-content" class="border-right">
+      <!-- Lab Content will be rendered here dynamically -->
+    </div>
+
+    <!-- Right Container for WebSocket Terminal -->
+    <div id="terminal-container" class="border-left">
+      <!-- xterm.js terminal will be rendered here dynamically -->
+      <div id="xterm-container" class="terminal-container"></div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- xterm.js library -->
+  <script src="/javascripts/xterm.js"></script>
+
+  <!-- Your xterm.js initialization script -->
+  <script src="/javascripts/linuxModule.js" defer></script>
+</body>
+</html>

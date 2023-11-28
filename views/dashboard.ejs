@@ -1,0 +1,54 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tome Learning Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/dashboard.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Arcane Security</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <button id="logout-button" class="btn btn-primary btn-block">Logout</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Linux Learning Lab</h2>
+            <p class="card-text">Explore the world of Linux with hands-on labs. Get hands-on experience with Linux commands and administration.</p>
+            <!-- Add an image placeholder or leave space for an image here -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h2 class="card-title">Networking Lab</h2>
+            <p class="card-text">Dive into networking concepts and protocols. Learn about networking fundamentals and practical applications.</p>
+            <!-- Add an image placeholder or leave space for an image here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="/javascripts/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Networking Learning Lab</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+
+        #main-container {
+            display: flex;
+            height: calc(100% - 70px);
+        }
+
+        #lab-content {
+            overflow-y: auto;
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .alert-container {
+            position: absolute;
+            top: 70px; /* Adjust the top position as needed */
+            right: 15px;
+            z-index: 1000;
+        }
+
+        .alert {
+            position: relative;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 0.25rem;
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+
+        .progress-bar {
+            width: 0%;
+            height: 20px;
+            background-color: #007bff;
+        }
+
+        .header-buttons {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Header -->
+    <div id="header">
+        <h1>Networking Learning Lab</h1>
+        <!-- Header Buttons -->
+        <div class="header-buttons">
+            <!-- Spawn Kali Instance Button -->
+            <button id="spawnKaliButton" class="btn btn-primary">Spawn Kali Instance</button>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container">
+        <!-- Left Container for Lab Content -->
+        <div id="lab-content" class="border-right">
+            <!-- Lab Content will be rendered here dynamically -->
+        </div>
+    </div>
+
+    <!-- Alert Container -->
+    <div id="alert-container" class="alert-container"></div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Your networkingModule.js initialization script -->
+    <script src="/javascripts/networkingModule.js" defer></script>
+</body>
+</html>

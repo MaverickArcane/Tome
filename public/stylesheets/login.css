@@ -1,0 +1,20 @@
+/* public/stylesheets/login.css */
+body {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .card {
+    background-color: #444;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: #6a0dad;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #4a0674;
+  }
+  
