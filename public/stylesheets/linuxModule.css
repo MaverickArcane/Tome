@@ -1,30 +1,115 @@
 /* public/stylesheets/linuxModule.css */
+
 /* Add your custom styles for the Linux Learning Lab module */
 /* Feel free to customize the colors, fonts, and layout */
 
 body {
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 60px; /* Adjusted margin to accommodate the fixed-bottom logout button */
-  }
-  
-  .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .border {
-    border: 1px solid #ddd;
-    border-radius: 5px; /* Added border-radius for a subtle rounded appearance */
-  }
-  
-  /* Additional styles as needed */
-  
-  /* Adjustments for the fixed-bottom logout button */
-  .fixed-bottom {
-    position: fixed;
-    width: 100%;
-    z-index: 1030; /* higher than the default z-index for Bootstrap navbar */
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 60px; /* Adjusted margin to accommodate the fixed-bottom logout button */
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.border {
+  border: 1px solid #ddd;
+  border-radius: 5px; /* Added border-radius for a subtle rounded appearance */
+}
+
+/* Additional styles as needed */
+
+/* Adjustments for the fixed-bottom logout button */
+.fixed-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1030; /* higher than the default z-index for Bootstrap navbar */
+}
+
+/* Styles for #header and #logout-link */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+#header .header-left {
+  display: flex;
+  align-items: center;
+}
+
+#header .header-left button {
+  margin-right: 10px; /* Adjust the space between the buttons */
+}
+
+#header .header-text {
+  flex-grow: 1;
+  text-align: center; /* Center the text */
+}
+
+#header .header-right {
+  margin-left: auto;
+}
+
+#header #logout-link {
+  text-decoration: none;
+}
+
+#header #logout-link button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+#header #logout-link button:hover {
+  background-color: #a52d3d;
+  border-color: #a52d3d;
+}
+
+/* Remaining styles from the original HTML file */
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#main-container {
+  display: flex;
+  height: calc(100% - 70px);
+}
+
+#lab-content {
+  overflow-y: auto;
+  flex: 1;
+  padding: 1rem;
+}
+
+#terminal-container {
+  flex: 1;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terminal-container {
+  height: 100%;
+}
+
+.xterm {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}

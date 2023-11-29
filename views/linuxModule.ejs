@@ -6,58 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/xterm.css">
+  <link rel="stylesheet" href="/stylesheets/linuxModule.css">
+
   <title>Linux Learning Lab</title>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      overflow: hidden;
-    }
-
-    #header {
-      background-color: #343a40;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-
-    #main-container {
-      display: flex;
-      height: calc(100% - 70px);
-    }
-
-    #lab-content {
-      overflow-y: auto;
-      flex: 1;
-      padding: 1rem;
-    }
-
-    #terminal-container {
-    flex: 1;
-    padding: 1rem;
-    /* Add some styles to ensure proper sizing and visibility of xterm.js terminal */
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-  }
-
-    .terminal-container {
-      height: 100%;
-    }
-    .xterm {
-        display: flex;
-        align-items: center;
-        margin-top: 200px; /* Adjust the margin as needed */
-    }
-
-  </style>
 </head>
 <body class="bg-light">
   <!-- Header -->
   <div id="header">
-    <h1>Linux Learning Lab</h1>
+    <div class="header-left">
+      <a id="back-to-dashboard" href="/dashboard">
+        <button class="btn btn-secondary">
+          <span>&#8592;</span> Dashboard
+        </button>
+      </a>
+    </div>
+    <h1 class="header-text">Linux Learning Lab</h1>
+    <div class="header-right">
+      <a id="logout-link" href="/logout"><button class="btn btn-primary">Logout</button></a>
+    </div>
   </div>
 
   <!-- Main Container -->

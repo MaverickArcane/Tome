@@ -1,9 +1,14 @@
+// /public/javascripts/networkingModule.js
+
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch and render lab content
     fetchLabContent();
 
     // Setup spawn Kali instance button
     setupSpawnKaliButton();
+
+    // Setup terminate Kali instance button
+    setupTerminateKaliButton();
 });
 
 function fetchLabContent() {
@@ -59,6 +64,35 @@ function handleSpawnKali() {
         });
     })
     .catch(error => console.error('Error spawning Kali instance:', error));
+}
+
+function setupTerminateKaliButton() {
+    // Add event listener to the terminate Kali instance button
+    const terminateKaliButton = document.getElementById('terminateKaliButton');
+    terminateKaliButton.addEventListener('click', handleTerminateKali);
+}
+
+function handleTerminateKali() {
+    // Make authenticated request to terminate Kali instance
+    fetch('http://localhost:3000/api/v1/killinstance', {
+        method: 'GET',
+        credentials: 'include',
+        headers: {
+            'Content-Type': 'application/json',
+            'Cookie': `token=${getCookie('token')}`
+        },
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Failed to terminate Kali instance: ${response.statusText}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        // Show alert with termination message
+        showAlert(`Instance terminated successfully. Instance ID: ${data.terminatedInstanceId}`);
+    })
+    .catch(error => console.error('Error terminating Kali instance:', error));
 }
 
 function showAlertWithProgressBar(message, durationInSeconds, onComplete) {

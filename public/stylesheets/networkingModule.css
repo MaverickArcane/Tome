@@ -1,0 +1,124 @@
+/* public/stylesheets/networkingModule.css */
+
+/* Add your custom styles for the Networking Learning Lab module */
+/* Feel free to customize the colors, fonts, and layout */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+#header {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  margin-right: auto;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center the text */
+  flex-grow: 1;
+}
+.header-text {
+  color: white;
+  margin: 0 10px;
+}
+
+.header-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-buttons {
+  margin-left: auto;
+}
+
+/* Additional styles for buttons */
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.separator {
+  margin: 0 10px; /* Adjust the space between buttons */
+}
+
+#logout-link {
+  text-decoration: none;
+}
+
+#logout-link button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+#logout-link button:hover {
+  background-color: #a52d3d;
+  border-color: #a52d3d;
+}
+
+#terminateKaliButton {
+  margin-left: 10px; /* Add some space between the buttons */
+  padding: 0.5rem 1rem;
+  border: 1px solid #dc3545;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+#terminateKaliButton:hover {
+  background-color: #a52d3d;
+  border-color: #a52d3d;
+}
+
+/* Add styles for the alert container */
+.alert-container {
+  position: fixed;
+  top: 90px; /* Adjusted to be below the header */
+  right: 10px; /* Adjusted to top right */
+  padding: 10px; /* Add padding for better visibility */
+  z-index: 9999; /* Set a high z-index to ensure it appears on top of other elements */
+}
+
+.alert {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.progress-bar {
+  background-color: #007bff;
+  height: 20px;
+  border-radius: 5px;
+}

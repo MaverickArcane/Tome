@@ -4,75 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/networkingModule.css">
     <title>Networking Learning Lab</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        #header {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: relative;
-        }
-
-        #main-container {
-            display: flex;
-            height: calc(100% - 70px);
-        }
-
-        #lab-content {
-            overflow-y: auto;
-            flex: 1;
-            padding: 1rem;
-        }
-
-        .alert-container {
-            position: absolute;
-            top: 70px; /* Adjust the top position as needed */
-            right: 15px;
-            z-index: 1000;
-        }
-
-        .alert {
-            position: relative;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid transparent;
-            border-radius: 0.25rem;
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
-        }
-
-        .progress-bar {
-            width: 0%;
-            height: 20px;
-            background-color: #007bff;
-        }
-
-        .header-buttons {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-        }
-    </style>
 </head>
 <body class="bg-light">
-    <!-- Header -->
+   <!-- Header -->
     <div id="header">
-        <h1>Networking Learning Lab</h1>
-        <!-- Header Buttons -->
-        <div class="header-buttons">
-            <!-- Spawn Kali Instance Button -->
-            <button id="spawnKaliButton" class="btn btn-primary">Spawn Kali Instance</button>
+        <!-- Left side of the header -->
+        <div class="header-section header-left">
+          <a id="back-to-dashboard" href="/dashboard">
+            <button class="btn btn-secondary">
+              <span>&#8592;</span> Dashboard
+            </button>
+          </a>
+          <!-- Add some space between the buttons -->
+          <span class="separator"></span>
+          <!-- Logout Button -->
+          <a id="logout-link" href="/logout">
+            <button class="btn btn-primary">Logout</button>
+          </a>
         </div>
-    </div>
-
+    
+        <!-- Center of the header -->
+        <div class="header-section header-center">
+          <h1>Networking Lab</h1>
+        </div>
+    
+        <!-- Right side of the header -->
+        <div class="header-section header-buttons">
+          <!-- Spawn Kali Instance Button -->
+          <button id="spawnKaliButton" class="btn btn-primary">Spawn Kali Instance</button>
+          <!-- Terminate Kali Instance Button -->
+          <button id="terminateKaliButton">🗑️</button>
+        </div>
+      </div>
     <!-- Main Container -->
     <div id="main-container">
         <!-- Left Container for Lab Content -->
