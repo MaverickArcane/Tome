@@ -7,7 +7,10 @@ var logger = require('morgan');
 const authRoutes = require('./routes/login');
 const logoutRouter = require('./routes/logout');
 var indexRouter = require('./routes/index');
-const dashboardRouter = require('./routes/dashboard'); // Add this line
+const dashboardRouter = require('./routes/dashboard');
+const moduleRouter = require('./routes/module');
+
+
 
 var app = express();
 
@@ -24,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/login', authRoutes);
 app.use('/logout', logoutRouter);
 app.use('/dashboard', dashboardRouter);
+app.use('/module', moduleRouter);
 app.use('/', indexRouter);
 
 

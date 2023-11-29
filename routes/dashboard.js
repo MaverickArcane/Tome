@@ -18,13 +18,5 @@ router.get('/', isAuthenticated, (req, res) => {
   res.render('dashboard');
 });
 
-router.get('/module/linuxLearningLab', isAuthenticated, (req, res) => {
-    res.render('linuxModule');
-});
-
-router.get('/module/networkingLab', isAuthenticated, (req, res) => {
-    res.render('networkingModule');
-});
-
 
 module.exports = router;
