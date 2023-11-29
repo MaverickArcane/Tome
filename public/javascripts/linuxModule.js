@@ -34,7 +34,7 @@ function setupWebSocketTerminal() {
     const term = new Terminal();
     term.open(document.getElementById('xterm-container'));
 
-    const socket = new WebSocket('ws://192.168.0.226:6060');
+    const socket = new WebSocket('ws://localhost:6060');
 
     socket.addEventListener('message', function (event) {
         term.write(event.data);

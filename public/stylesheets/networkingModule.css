@@ -122,3 +122,15 @@ body, html {
   height: 20px;
   border-radius: 5px;
 }
+
+/* Add styles for the lab-content-container */
+#main-container {
+  display: flex;
+  height: calc(100% - 70px);
+}
+
+#lab-content {
+  overflow-y: auto;
+  flex: 1;
+  padding: 1rem;
+}
