@@ -10832,7 +10832,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background-image:url('/public/img/cyber.jpg') ;
+  background-image:url('/img/cyber.jpg') ;
 }
 header.masthead .masthead-content {
   z-index: 1;
