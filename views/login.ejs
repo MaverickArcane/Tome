@@ -3,39 +3,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
   <title>Login to Tome Learning Platform</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/stylesheets/login.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/Arcane.png" />
+
+  <!-- CSS Bootstrap-->
+  <link rel="stylesheet" href="/public/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  
+  <!-- CSS StyleSheet -->
+  <link rel="stylesheet" href="/public/stylesheets/index.css">
+  <link rel="stylesheet" href="/public/stylesheets/login.css">
 </head>
-<body>
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h2 class="text-center mb-4">Login to Tome Learning Platform</h2>
-            <form id="login-form">
-              <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" class="form-control" required>
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container px-5">
+      <a class="navbar-brand" href="#page-top"><img width="50px" height="50px" src="/public/img/Arcane.png"/>Tome</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.ejs">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="/public/img/Arcane_Logos.png" alt="login form" class="img-fluid"/>
               </div>
-              <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" class="form-control" required>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+                  <form id="login-Form">
+                    <div class="form-group">
+                      <span class="h1 fw-bold mb-0">Login to Tome Learning Platform</span>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="username">Username:</label>
+                      <input type="text" id="username" class="form-control form-control-lg" required>
+                    </div>
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="password">Password:</label>
+                      <input type="password" id="password" class="form-control form-control-lg" required>
+                    </div>
+                    <div class="pt-1 mb-4">
+                      <button type="button" id="login-button" class="btn btn-primary btn-block">Sign In</button>
+                    </div>
+                    <a class="small text-muted" href="#!">Forgot password?</a>
+                    <a href="#!" class="small text-muted">Terms of use.</a>
+                    <a href="#!" class="small text-muted">Privacy policy</a>
+                  </form>
+                  <div id="login-message" class="mt-3 text-center"></div>
+                </div>
               </div>
-              <button type="button" id="login-button" class="btn btn-primary btn-block">Sign In</button>
-            </form>
-            <div id="login-message" class="mt-3 text-center"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
+  </section>
+  <!-- Footer-->
+  <footer class="py-5 bg-black">
+    <div class="container" px-5>
+      <p class="m-0 text-center text-white small">
+        Copyright &copy; www.arcanesecurity.org
+      </p>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="/javascripts/login.js" defer></script>
+  <script src="/public/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/public/javascripts/login.js" defer></script>
 </body>
 </html>

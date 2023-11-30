@@ -1,20 +1,16 @@
 /* public/stylesheets/login.css */
-body {
-    background-color: #333;
-    color: #fff;
+  .vh-100 {
+    background-color:#d9e6f2;
   }
-  
+ 
   .card {
-    background-color: #444;
-    border: none;
+    border-radius: 1rem;
   }
   
-  .btn-primary {
-    background-color: #6a0dad;
-    border: none;
+  .img-fluid {
+    border-radius: 1rem 0 0 1rem;
   }
   
-  .btn-primary:hover {
-    background-color: #4a0674;
+  .fw-normal{
+    letter-spacing: 1px;
   }
-  
