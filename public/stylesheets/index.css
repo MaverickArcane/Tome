@@ -3764,6 +3764,8 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
+  display: flex;
+  align-items: center;
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
@@ -3772,6 +3774,11 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
 .navbar-brand:hover, .navbar-brand:focus {
   color: var(--bs-navbar-brand-hover-color);
 }

@@ -30,10 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
           const errorData = await response.json();
           console.error('Login failed:', errorData.message);
           // Handle login failure (e.g., show an error message)
+
+          // Displays the error message on HTML side
+          $('#errorMessage').text(errorData.message);
         }
       } catch (error) {
         console.error('Error during login:', error);
         // Handle login error (e.g., show an error message)
+        $('#errorMessage').text('Username or password is incorrect, please try again.')
       }
     });
   });

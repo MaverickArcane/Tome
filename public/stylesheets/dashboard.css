@@ -99,7 +99,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: #d9e6f2;
+  
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -616,7 +616,10 @@ progress {
   font-size: 0.875em;
   color: #6c757d;
 }
-
+main {
+  flex: 1;
+  background-color: #d9e6f2;
+}
 .container,
 .container-fluid,
 .container-xxl,
@@ -631,6 +634,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 @media (min-width: 576px) {
@@ -10969,6 +10973,9 @@ body {
   flex-direction: column;
   height: 100%;
   flex-wrap: nowrap;
+}
+.sb-sidenav-menu-heading {
+  text-align: center;
 }
 .sb-sidenav .sb-sidenav-menu {
   flex-grow: 1;
