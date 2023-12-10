@@ -3632,7 +3632,7 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  display: block;
+  text-align: center;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight);
@@ -6803,6 +6803,7 @@ textarea.form-control-lg {
   left: 0;
   z-index: 1030;
 }
+
 
 .fixed-bottom {
   position: fixed;

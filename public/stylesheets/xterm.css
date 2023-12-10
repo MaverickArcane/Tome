@@ -43,6 +43,7 @@
     -webkit-user-select: none;
 }
 
+
 .xterm.focus,
 .xterm:focus {
     outline: none;
@@ -93,7 +94,6 @@
 .xterm .xterm-viewport {
     /* On OS X this is required in order for the scroll bar to appear fully opaque */
     background-color: #000;
-    overflow-y: scroll;
     cursor: default;
     position: absolute;
     right: 0;
@@ -104,6 +104,7 @@
 
 .xterm .xterm-screen {
     position: relative;
+    width: 100%;
 }
 
 .xterm .xterm-screen canvas {
@@ -112,9 +113,7 @@
     top: 0;
 }
 
-.xterm .xterm-scroll-area {
-    visibility: hidden;
-}
+
 
 .xterm-char-measure-element {
     display: inline-block;

@@ -1,6 +1,7 @@
 // public/javascripts/login.js
 document.addEventListener('DOMContentLoaded', function () {
     const loginButton = document.getElementById('login-button');
+    
   
     loginButton.addEventListener('click', async function () {
       const username = document.getElementById('username').value;

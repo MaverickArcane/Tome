@@ -109,7 +109,7 @@ body, html {
 }
 
 .xterm {
-  display: flex;
-  align-items: center;
-  margin-top: 200px;
+  display: 100%;
+  align-items: 100%;
+  margin-top: 0;
 }
